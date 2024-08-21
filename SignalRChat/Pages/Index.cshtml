@@ -1,0 +1,30 @@
+﻿@page       
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div>
+        <label for="user">User</label>
+        <input type="text" id="user">
+        <label for="input">message</label>
+        <input type="text" id="input">
+    </div>
+    <div>
+       <div class="col-6 text-end">
+            <input type="button" id="send" value="Send Message" />
+        </div>
+    </div>
+    <div>
+        <ul id = "List">
+
+        </ul>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
